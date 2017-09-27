@@ -1,12 +1,18 @@
 <?php
 
-
+/**
+ * @file
+ * Send admin an email every time a basic page is created by a user
+ *
+ * When a user creates a "basic page" content type, and email will be sent to the 
+ * administrator email address informing the admin that new content has been created.
+ * A link to the new content will be sent in this email.
+ */
 
 /**
- * Implements hook_menu();
+ * Implements hook_node_insert();
  */
-function emailme_menu() {
-  
-
+function emailme_node_insert($node) {
+ echo "you created a node";
 }
 

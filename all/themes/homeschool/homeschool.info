@@ -1,0 +1,29 @@
+
+name = HomeSchool Oregon
+description = Theme specifically made for the homeschool website.
+package = Core
+version = VERSION
+core = 7.x
+
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/book.css
+
+;CORE REGIONS REQUIRED 
+regions[page_top] = Page Top
+regions[page_bottom] = Page Bottom
+regions[content] = Content
+
+;ADDITIONAL LAYOUT REGIONS
+regions[top_bar] = Top Bar
+regions[header] = Header
+regions[ad] = Advertisement
+regions[help] = Help
+regions[highlighted] = Highlighted
+;regions[content] = Content (set above)
+regions[footer] = Footer
+
+; both sidebar regions will not be used at same time
+regions[sidebar_first]  = Left sidebar
+regions[sidebar_second] = Right sidebar
+regions[subcontent] = Sub Content
+

@@ -1,0 +1,171 @@
+body {margin:0;background: url("../images/bg.png") repeat-x #123e6b left top; font-family:arial;}
+
+.page_top_inner, .header_inner, ul#main-menu-links, #main, #footer-wrapper div.section {width:960px;margin-left:auto;margin-right:auto;}
+
+.navigation {background:url("../images/navbg.png") repeat scroll 0 0 rgba(0, 0, 0, 0)}
+
+/*black bar at top of every page*/
+.page_top_outer {background-color:#000000;overflow:hidden;}
+
+.header_inner {position:relative;overflow:hidden;}
+.header_inner #logo {float:left;}
+.header_inner #name-and-slogan {float:left;margin-top:30px;}
+.header_inner #site-name a {color: white; text-decoration: none; font-family: Tahoma; font-size: 35px; text-shadow:2px 2px #333;}
+.header_inner #site-slogan {color:gold;font-family:arial;font-size:12px;}
+.header_inner #block-search-form {position:absolute;right:70px;top:50px}
+.header_inner #block-search-form .form-submit {border:none;border-radius:8px;background:url("../images/searchbg.png") repeat-x #123e6b left top;font-weight:bold;color:white;text-shadow:0 1px 2px #000;box-shadow:2px 2px #111;font-size:12px;}
+
+ul#secondary-menu-links {padding:0;margin:0;display:inline;}
+ul#secondary-menu-links li {display:inline;float:right;font-size:14px;padding:3px 7px; border-right:1px solid gold;}
+ul#secondary-menu-links li:first-child {border:none;}
+ul#secondary-menu-links li a.active {color:#FFD700;text-decoration:none;}
+ul#secondary-menu-links li a {color:#FFD700;text-decoration:none;}
+ul#secondary-menu-links li a:active {color:#FFD700;text-decoration:none;}
+ul#secondary-menu-links li a:hover {color:#ffffff;text-decoration:underline;}
+
+/*main horizontal menu at top*/
+ul#main-menu-links {padding:0;margin-top:0;margin-bottom:0;border-radius:6px;clear:both;height:20px;background:url("../images/navbg.png");}
+ul#main-menu-links li {display:inline;float:left;margin:0;padding:0;}
+ul#main-menu-links li a {background:url("../images/navbg.png") repeat-x #123e6b left top;color:white;font-family:arial;text-decoration:none;padding:4px 10px 2px 10px;font-size:12px;border-right:1px solid #0D4D91;}
+ul#main-menu-links li:first-child a {border-left:1px solid #0D4D91;}
+ul#main-menu-links li a:hover {background-image:url("../images/navbghover.png"); background-repeat:repeat-x; background-position:left top;}
+ul#main-menu-links li a.active {background-image:url("../images/navbghover.png"); background-repeat:repeat-x; background-position:left top;}
+.node-type-book ul#main-menu-links li.first + li a {background-image:url("../images/navbghover.png"); background-repeat:repeat-x; background-position:left top;}
+
+/*footer*/
+#footer-wrapper {background-color:black;color:white;overflow:hidden;border-top:20px solid #2989D8;}
+#footer-wrapper ul {float:left;width:150px;font-size:13px;}
+
+#sidebar-first {float:left;width:285px;margin-right:15px;}
+#sidebar-second {float:right;width:285px;margin-left:15px;}
+
+/*main content area*/    
+#main-wrapper {background-color:white;}
+div#content {float:right;width:960px;}
+div#content.onesidebar_true {width:660px;}
+div#content {margin-top:10px;}
+
+
+/*Homepage*/
+	/*website description in blue advertisement region*/
+	#ad {margin-top:5px;margin-bottom:5px;background-color:#E1F7FC;padding:20px 0;background-image:url("../images/oregonfalls.jpg");background-size:1500px;background-position:50%;height:300px;}
+	#ad .block {width:960px;margin-left:auto;margin-right:auto;}
+	#ad h2 {display:none;}
+	#ad a.joinnow {
+		display:block;float:right;background-color:orange;padding:10px;margin:0px 5px;margin-right:30px;border:none;border-radius:8px;
+		box-shadow: 2px 2px #111111;color:#FFFFFF;font-size: 30px;font-weight:bold;text-shadow: 0 1px 2px #000000;
+		text-decoration:none;
+	}
+	#ad a.joinnow:hover {background-color:gold;}
+	#ad p {margin:0;padding-top:10px;color:white;font-size:30px;width:550px;}
+
+	/*slideshow*/
+	#block-views-homepage-slideshow-block h2 {display:none;}
+	#block-views-homepage-slideshow-block .views-field-title {display:none;}
+	#block-views-homepage-slideshow-block .views-field-body {
+	  background-color:purple;border-radius:8px;color:#FFFFFF;font-size:13px;padding:10px;position:absolute;right:20px;top:15px;width:300px;
+	}
+	#block-views-homepage-slideshow-block #views_slideshow_cycle_div_homepage_slideshow-block_0 .views-field-body {top:200px;}
+	#block-views-homepage-slideshow-block #views_slideshow_cycle_div_homepage_slideshow-block_2 .views-field-body {right:30px;}
+        #block-views-homepage-slideshow-block .views-slideshow-controls-bottom .views-field-title {
+	  display:inline; float:left; background-image:url("../images/slideshowdotgrey.png");
+          background-repeat:no-repeat; background-position:left top; 
+          height:16px;width:16px;
+	}
+	#block-views-homepage-slideshow-block .views-slideshow-controls-bottom {padding-left:310px}
+	#block-views-homepage-slideshow-block .views-slideshow-controls-bottom .active .views-field-title {
+	  background-image:url("../images/slideshowdot.png");
+        }
+	#block-views-homepage-slideshow-block .views-slideshow-controls-bottom .views-field-title .views-content-title {display:none;}
+	
+	/* "charity" block and "What others are saying" block*/
+	body.front #sidebar-second h2 {font-size:20px;text-align:center; margin:-5px;padding:5px;background-color:#002A57;color:white;text-shadow:1px 1px grey;}
+	
+	/*what others are saying block*/
+	.critics {overflow:hidden;font-size:14px;}
+	.critics .quote {clear:both;margin-bottom:0;font-style:italic;color:#333;}
+	.critics .name {text-align:right;margin-top:0;margin-bottom:1.5em;}
+	
+	/*How does it work block*/
+	.how {background-image:url("../images/blkgrad.jpg"); background-repeat:repeat-x; background-position:left top;}
+	.how h2 {text-align:center;margin-top:2em;border-top:1px solid grey;padding-top:1em;font-weight:normal;}
+	div.ebook_ad > p {margin-top:0em;font-size:13px;}
+	div.ebook_ad {float:left;width:310px;margin-right:10px;margin-bottom:1em;}
+	div.ebook_ad h3 {text-align:center;color:#999999;font-family:arial;font-weight:normal;margin-top:0;padding:5px;font-size:25px;margin-bottom:0;}
+	div.ebook_ad > p {margin-top:0em;}
+	div.ebook_ad img {width:310px;box-shadow:4px 4px 4px grey}
+	div.community_ad {float:left;width:310px;margin-left:10px;margin-bottom:1em;}
+	div.community_ad h3 {text-align:center;color:#999999;font-family:arial;font-weight:normal;margin-top:0;padding:5px;font-size:25px;margin-bottom:0;}
+	div.community_ad > p {margin-top:0em;font-size:13px;}
+	div.community_ad img {width:310px;box-shadow:4px 4px 4px grey}
+	/*why homeschool*/
+	div.find {clear:both;position:relative;background-image:url("../images/emptypockets.jpg");background-repeat:no-repeat;background-position:left top;background-color:#5A96AD;}
+	div.find h3 {position:absolute;left:150px;font-weight:normal;font-size:30px;text-shadow:1px 1px grey;color:white;top:10px;margin:0;}
+	div.find h3 + p {padding-top:300px;}
+	div.find p {color:white;font-size:13px;padding-left:20px;padding-right:25px;}
+	div.find ul {list-style-type:none;padding-bottom:1em;}
+	div.find ul strong {text-decoration:underline;}
+	#block-block-6 a.joinnow {
+		display:block;background-color:orange;padding:10px;margin:0px 30px 1em 5px;border:none;border-radius:8px;
+		box-shadow: 2px 2px #111111;color:#FFFFFF;font-size: 30px;font-weight:bold;text-shadow: 0 1px 2px #000000;
+		text-decoration:none;text-align:center;clear:both;
+	}
+	#block-block-6 a.joinnow:hover {background-color:gold;}
+	/*default homepage content (should be hidden)*/
+	#page-title {display:none;}
+
+
+
+/*ebook*/
+.node-type-book #breadcrumb {display:none;}
+.book-navigation .page-links {border:none;}
+     /*table of contents block*/
+     .block-book-explorer {background-color: white; border: 4px solid #002A57; border-radius: 6px; margin-top: 10px;margin-bottom:30px; padding: 5px;}
+     .block-book-explorer h2 {margin:-5px;padding:5px;background-color:#002A57;color:white;text-shadow:1px 1px grey;font-size:19px;}
+     .block-book-explorer h2 a {color:white;}
+     .block-book-explorer h2 a:link {text-decoration:none;}
+     .block-book-explorer h2 a:hover {text-decoration:underline;}
+     .block-book-explorer ul.menu {margin-top:20px;margin-bottom:20px;font-size:14px;}
+     .block-book-explorer .expanded ul.menu {margin-top:0;margin-bottom:0;}
+     .block-book-explorer .menu a:link {text-decoration:none;color:#000;}
+     .block-book-explorer .menu a:hover {text-decoration:underline;}
+     .block-book-explorer .menu a.book-explorer-toggle:hover {text-decoration:none;}
+     /*main content of the ebook is in a separate book.css file*/
+     
+
+	
+/*ask homeschool main page*/
+.page-ask h1#page-title {display:none;}
+.page-ask #breadcrumb {display:none}
+     /*Highlighted ASK HOMESCHOOL article at top*/
+     .page-ask .view-most-recent-ask-homeschool {padding:10px;border-bottom:4px dotted #123E6B}
+     .page-ask .view-most-recent-ask-homeschool .views-field-field-ask-image {float:left;margin-right:10px;}
+     .page-ask .view-most-recent-ask-homeschool .views-field-field-ask-image img {box-shadow:3px 3px 4px #555;}
+     .page-ask .view-most-recent-ask-homeschool .views-field-title {padding-top:8px;font-size:30px;text-shadow:1px 1px #999;font-weight:bold;}
+     .page-ask .view-most-recent-ask-homeschool .views-field-title a {color:#123E6B;text-decoration:none;}
+     .page-ask .view-most-recent-ask-homeschool .views-field-title a:hover {color:gold;text-decoration:underline;}
+     /*smaller blocks at bottom*/
+     .page-ask .block-views {float:right;width:207px;margin:20px 5px;}
+     .page-ask .block-views h2 {margin:0;font-size:14px;}
+     .page-ask .block-views .content {padding:0 5px;border-bottom:4px solid black;border-top:4px solid black;font-size:11px;background-color:#F7F7F7;}
+     .page-ask .block-views .content .views-row {border-bottom:1px dotted black;padding-top:5px;}
+     .page-ask .block-views .content .views-row:last-child {border-bottom:none;}
+     .page-ask .block-views .content .views-field-title a {color:#123E6B;text-decoration:none;font-size:12px;}
+     .page-ask .block-views .content .views-field-title a:hover {color:#123E6B;text-decoration:underline;}
+
+
+/*blog main page*/
+.page-blog h1#page-title {display:none;}
+.page-blog #breadcrumb {display:none}
+     /*Highlighted BLOG entry at top*/
+     .page-blog .view-display-id-page {padding:10px;border-bottom:4px dotted #123E6B}
+     .page-blog .view-display-id-page .views-field-title {padding-top:8px;font-size:30px;text-shadow:1px 1px #999;font-weight:bold;}
+     .page-blog .view-display-id-page .views-field-title a {color:#123E6B;text-decoration:none;}
+     .page-blog .view-display-id-page .views-field-title a:hover {color:gold;text-decoration:underline;}
+     /*smaller blocks at bottom*/
+     .page-blog .block-views {float:right;width:207px;margin:20px 5px;}
+     .page-blog .block-views h2 {margin:0;font-size:14px;}
+     .page-blog .block-views .content {padding:5px;border-bottom:4px solid black;border-top:4px solid black;font-size:12px;background-color:#D3EAED;}
+
+/*right sidebar*/
+#sidebar-second .block {background-color: white; border: 4px solid #002A57; border-radius: 6px; margin-top: 10px;margin-bottom:30px; padding: 5px;}

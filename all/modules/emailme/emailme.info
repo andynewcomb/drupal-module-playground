@@ -1,9 +1,7 @@
 name = emailme
-description = 
+description = Send admin an email every time a "basic page" is created by a user
 core = 7.x
-package = 
-php = 
-version =
-dependencies[] = 
-files[] = 
-configure = 
+package = Module Playground
+php = 5.5.38
+files[] = emailme.module
+

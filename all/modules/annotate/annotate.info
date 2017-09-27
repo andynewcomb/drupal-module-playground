@@ -1,0 +1,6 @@
+name = annotate
+description = allow users to annotate their own content for certain content types
+core = 7.x
+package = Module Playground
+php = 5.5.38 
+files[] = annotate.module
