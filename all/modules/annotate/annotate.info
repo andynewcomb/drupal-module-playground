@@ -4,3 +4,5 @@ core = 7.x
 package = Module Playground
 php = 5.5.38 
 files[] = annotate.module
+files[] = annotate.install
+files[] = annotate.admin.inc
