@@ -35,3 +35,18 @@ function annotate_menu() {
   
   return $items;
 }
+
+
+/**
+ * Implements hook_node_load();
+ */
+function annotate_node_load($nodes, $types) {
+  global $user;
+  //check to see if the person viewing the node is the author. If not then hide the annotation field
+  foreach ($nodes as $node) {
+    if ($user->uid != $node->uid) {
+      unset($node->annotation);
+    }
+    
+  }
+}
