@@ -1,0 +1,6 @@
+name = menufun
+description = Learning about the menu system
+core = 7.x
+package = Module Playground
+php = 5.5
+files[] = menufun.module
