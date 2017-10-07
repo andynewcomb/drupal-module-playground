@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * @file
+ * Forces users to register if they want to continue using the website
+ *
+ * Squeeze configuration settings allow a site administrator to enable squeeze
+ * functionality for entire site, individua nodes, or off.  
+ * The default behavior is that squeeze functionality is off. Enabling is done
+ * via the admin->configuration->squeeze settings page. 
+ * Once squeeze functionality is enabled, you can choose the squeeze type:
+ * a.) immediately
+ * b.) a timer
+ * c.) clicks
+ */
+
+/**
+ * Implements hook_menu();
+ */
+function squeeze_menu() {
+  $items['admin/config/squeeze'] = array(
+    'title' => 'Squeeze',
+    'description' => 'Manage squeeze settings.',
+    'position' => 'right',
+    'weight' => -99,
+    'page callback' => 'system_admin_menu_block_page',
+    'access arguments' => array('administer site configuration'),
+    'file' => 'system.admin.inc',
+    'file path' => drupal_get_path('module', 'system'),
+  );
+  
+  $items['admin/config/squeeze/settings'] = array(
+    'title' => 'Squeeze Settings',
+    'description' => 'Change how squeeze pages behave.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('squeeze_admin_settings'),
+    'access arguments' => array('administer site configuration'),
+    'type' => MENU_NORMAL_ITEM,
+    'file' => 'squeeze.admin.inc',
+  );
+  
+  return $items;
+}

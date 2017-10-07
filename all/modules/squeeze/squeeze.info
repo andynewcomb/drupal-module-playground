@@ -1,0 +1,6 @@
+name = squeeze
+description = forces users to register before they can continue using your website
+core = 7.x
+package = squeeze
+files[] = squeeze.module
+files[] = squeeze.inc
