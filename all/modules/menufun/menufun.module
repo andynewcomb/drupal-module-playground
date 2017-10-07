@@ -9,19 +9,48 @@
  * Implements hook_menu();
  */
 function menufun_menu() {
-  $items['menufun'] = array(
+  $items['menufun/menufun'] = array(
     'title' => 'Greeting',
     'page callback' => 'menufun_hello',
     'access callback' => TRUE,
-    'type' => MENU_CALLBACK,   
+    'type' => MENU_NORMAL_ITEM, 
+    'access callback' => 'user_access',
+    'access arguments' => array('post comments'),
   );
-  $items['menufunargs'] = array(
+  $items['menufunnav/menufunargs'] = array(
     'title' => 'Greeting with arguments',
     'page callback' => 'menufun_helloargs',
     'page arguments' => array('amy', 'newcomb'),
     'access callback' => TRUE,
-    'type' => MENU_CALLBACK,   
+    'type' => MENU_NORMAL_ITEM,   
+    'file' => 'menufun.inc',
   );
+  $items['menufunnav'] = array(
+    'title' => 'Greetings from the menu link',
+    'page callback' => 'menufunnav_hello',
+    'access callback' => TRUE,
+    'type' => MENU_NORMAL_ITEM,
+    'weight'=> -1,
+    'file' => 'menufun.inc'
+  );
+  $items['tabs'] =array(
+    'title' => 'Tabs Overview',
+    'page callback' => 'tabs_overview',
+    'access callback' => TRUE,
+    'type' => MENU_NORMAL_ITEM,
+  );
+   $items['tabs/first'] = array(
+    'title' => 'First Tab',
+    'access callback' => TRUE,
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+  );
+ $items['tabs/second'] = array(
+    'title' => 'Second Tab',
+    'page callback' => 'tab_second',
+    'access callback' => TRUE,
+    'type' => MENU_LOCAL_TASK,
+  );  
+      
   
   return $items;
 }
@@ -33,9 +62,10 @@ function menufun_hello() {
   return t('Hello!');
 }
 
-/**
- * page callback when there are arguments
- */
-function menufun_helloargs($first='',$last='',$first2='',$last2='') {
-  return t('Hello @first @last! I know you have the hots for @first2 @last2', array('@first'=>$first, '@last'=>$last,'@first2'=>$first2, '@last2'=>$last2));
+function tabs_overview() {
+  return t('Tabs are stupendous');
+}
+
+function tab_second() {
+  return t('Welcome to the second tab');
 }
