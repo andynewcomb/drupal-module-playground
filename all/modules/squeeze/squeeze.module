@@ -30,8 +30,8 @@ function squeeze_menu() {
   );
   
   $items['admin/config/squeeze/settings'] = array(
-    'title' => 'Squeeze Settings',
-    'description' => 'Change how squeeze pages behave.',
+    'title' => 'Squeeze settings',
+    'description' => 'Enable squeeze pages and choose how they behave.',
     'page callback' => 'drupal_get_form',
     'page arguments' => array('squeeze_admin_settings'),
     'access arguments' => array('administer site configuration'),

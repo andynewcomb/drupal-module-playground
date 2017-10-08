@@ -3,4 +3,4 @@ description = forces users to register before they can continue using your websi
 core = 7.x
 package = squeeze
 files[] = squeeze.module
-files[] = squeeze.inc
+files[] = squeeze.admin.inc
