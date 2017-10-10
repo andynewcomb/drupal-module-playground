@@ -1,1 +1,16 @@
 <?php
+
+/**
+ * The squeeze functionality is "off" by default, so set that variable in the 
+ * variables table.
+ */
+
+
+/**
+ * Implements hook_install();
+ */
+function squeeze_install() {
+  //We want the squeeze functionality turned off by default (no pages have any
+  //squeeze functionality)
+  variable_set('enable_squeeze_for', 0);
+}
