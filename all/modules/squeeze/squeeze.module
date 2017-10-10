@@ -5,7 +5,7 @@
  * Forces users to register if they want to continue using the website
  *
  * Squeeze configuration settings allow a site administrator to enable squeeze
- * functionality for entire site, individua nodes, or off.  
+ * functionality for entire site, individual nodes, or it's turned off.  
  * The default behavior is that squeeze functionality is off. Enabling is done
  * via the admin->configuration->squeeze settings page. 
  * Once squeeze functionality is enabled, you can choose the squeeze type:
@@ -41,3 +41,5 @@ function squeeze_menu() {
   
   return $items;
 }
+
+db_insert($table);

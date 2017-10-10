@@ -14,3 +14,15 @@ function squeeze_install() {
   //squeeze functionality)
   variable_set('enable_squeeze_for', 0);
 }
+
+
+
+
+/**
+ * Implements hook_uninstall();
+ */
+function squeeze_uninstall() {
+  //remove the squeeze configuration variable from the variables table
+  
+}
+
