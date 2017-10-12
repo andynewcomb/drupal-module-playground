@@ -11,8 +11,22 @@
  */
 function squeeze_install() {
   //We want the squeeze functionality turned off by default (no pages have any
-  //squeeze functionality)
+  //squeeze functionality when module installed). 
   variable_set('enable_squeeze_for', 0);
+  //We want squeeze type to be timer by default 
+  variable_set('squeeze_type',0);
+  //We want ssqueeze timer to be 0 (immediate) by default
+  variable_set('squeeze_timer',0);
+  //We want ssqueeze clicks to be 1 (first click) by default
+  variable_set('squeeze_clicks',0);
+  
+ //Individual nodes need fields applied to determines the type of squeeze
+ //1.) off
+ //2.) timer
+ //3.) clicks
+ 
+ 
+  
 }
 
 
@@ -22,7 +36,10 @@ function squeeze_install() {
  * Implements hook_uninstall();
  */
 function squeeze_uninstall() {
-  //remove the squeeze configuration variable from the variables table
-  
+  //remove the squeeze configuration variables from the variables table
+  variable_del('squeeze_enable');
+  variable_del('squeeze_type');
+  variable_del('squeeze_timer');
+  variable_del('squeeze_clicks');
 }
 

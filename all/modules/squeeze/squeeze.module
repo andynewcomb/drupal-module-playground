@@ -5,17 +5,18 @@
  * Forces users to register if they want to continue using the website
  *
  * Squeeze configuration settings allow a site administrator to enable squeeze
- * functionality for entire site, individual nodes, or it's turned off.  
+ * functionality for entire site or for individual nodes.  
  * The default behavior is that squeeze functionality is off. Enabling is done
  * via the admin->configuration->squeeze settings page. 
  * Once squeeze functionality is enabled, you can choose the squeeze type:
- * a.) immediately
- * b.) a timer
- * c.) clicks
+ * a.) a timer
+ * b.) clicks
  */
 
 /**
  * Implements hook_menu();
+ * 
+ * Create squeeze configuration page for admins 
  */
 function squeeze_menu() {
   $items['admin/config/squeeze'] = array(
@@ -42,4 +43,7 @@ function squeeze_menu() {
   return $items;
 }
 
-db_insert($table);
+
+
+
+
