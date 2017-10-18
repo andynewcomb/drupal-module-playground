@@ -1,0 +1,6 @@
+name = addjavascript
+description = module that adds javascript to certain pages
+core = 7.x
+package = Module Playground
+files[] = addjavascript.module
+

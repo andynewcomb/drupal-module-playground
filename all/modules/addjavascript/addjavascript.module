@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Module for playing around with javascript
+ * 
+ * Used for understanding how javascript is added to drupal when a module is
+ * enabled and wants javascript functionality on the frontent.
+ */
+
+
+
+
