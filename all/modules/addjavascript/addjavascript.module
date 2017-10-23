@@ -10,4 +10,15 @@
 
 
 
+// create javascript that renders on every page.
+// You could do this by adding it into your .info file in a file[] command
+// Or you can do it here with drupal_add_js() function. 
+
+
+/**
+ * Implements hook_init();
+ */
+function addjavascript_init() {
+  drupal_add_js(drupal_get_path('module','addjavascript').'/addjavascript.js');
+}
 
