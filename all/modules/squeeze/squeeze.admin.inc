@@ -49,7 +49,7 @@ function squeeze_admin_settings() {
   $form['squeeze_time_props']['squeeze_timer'] = array(
     '#type' => 'textfield',
     '#title' => t('Time in seconds'),
-    '#description' => t('Enter the delay in seconds until registration is required'),
+    '#description' => t('Enter the delay in seconds before registration is required'),
     '#default_value' => variable_get('squeeze_timer','0'),
     '#maxlength' => 3,
     '#required' => TRUE,

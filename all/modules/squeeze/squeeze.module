@@ -45,5 +45,30 @@ function squeeze_menu() {
 
 
 
+/**
+ * Implements hook_init();
+ */
+function squeeze_init() {  
+  //if timer enabled
+  //add javascript timer
+  //grab variable and put into the javascript function
+  $enable = variable_get('squeeze_enable');
+  if($enable == "1") {
+    $time = variable_get('squeeze_timer');
+    $timeInMilliseconds = $time * 1000;
+    drupal_add_js("jQuery(document).ready(function() { 
+      setTimeout(function(){
+        jQuery('#name-and-slogan').css({'background-color':'green'});
+      }, $timeInMilliseconds);
+    });", 'inline');
+    
+  }
+  
+  //if clicks enabled
+  //add javascript click
+  //on any click turn pop up an alert you need to register
+}
+
+
 
 

@@ -6,6 +6,22 @@
 
 
 jQuery(document).ready(function() {
+     //this sets a 5 second timer before the jquery executes. Quite rad. 
+    setTimeout(function(){
+        jQuery('#name-and-slogan').css({'background-color':'red'});
+    }, 5000);
+    
+    //any kind of click event will cause an alert. First disable all links.
+    //jQuery('a').click(function() {
+    //   return false; 
+    //});
+    //jQuery('*').click(function() {    
+    //    jQuery('#name-and-slogan').css({'background-color':'black'});
+    //   alert('this is an alert');
+    //});
+    
+    
+    
     var blocks  = jQuery('#sidebar-first div.block');
     
     blocks.hide();
